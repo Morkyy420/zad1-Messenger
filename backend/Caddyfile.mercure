@@ -1,0 +1,13 @@
+{
+    order mercure after encode
+}
+
+:80
+
+mercure {
+    publisher_jwt key "supersecretkey_for_mercure_dev"
+    subscriber_jwt key "supersecretkey_for_mercure_dev"
+    cors_origins "http://localhost:8080" "http://localhost:8000"
+}
+
+respond "Mercure hub is running"
